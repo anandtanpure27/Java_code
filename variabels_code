@@ -1,0 +1,19 @@
+package Demo;
+
+public class Variables {
+
+    int a = 50;            // Global (instance) variable
+    static int b = 100;    // Static variable
+
+    public static void main(String[] args) {
+        
+        Variables a1 = new Variables(); // Create object to access global variable 
+
+        int c = 150;        // Local variable (inside main method)
+
+        // Print all variables
+        System.out.println("Global Variable (a): " + a1.a); 
+        System.out.println("Static Variable (b): " + b);
+        System.out.println("Local Variable (c): " + c);
+    }
+}
